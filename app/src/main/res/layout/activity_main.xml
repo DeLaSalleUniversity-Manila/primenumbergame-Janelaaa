@@ -1,0 +1,89 @@
+<LinearLayout
+    android:layout_height="match_parent" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Prime or Composite?"
+        android:id="@+id/textView2"
+        android:layout_weight="0.12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="+1 for every correct answer"
+        android:id="@+id/textView3"
+        android:layout_weight="0.12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-5 for every wrong answer"
+        android:id="@+id/textView4"
+        android:layout_weight="0.12" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="70sp"
+        android:id="@+id/number"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.20" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text=""
+        android:id="@+id/score"
+        android:textSize="40sp"
+        android:layout_weight="0.61" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:id="@+id/buttongroup"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textViewNumber"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+        <Button
+            android:id="@+id/prime_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="onClickPrime"
+            android:text="@string/prime"
+            />
+
+        <Button
+            android:id="@+id/composite_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="onClickComposite"
+            android:text="@string/compos" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Janela Angeles"
+        android:id="@+id/textView"
+        android:layout_weight="0.12"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>
